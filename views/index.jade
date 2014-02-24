@@ -39,7 +39,7 @@ html
             .bottom-trigger.about-trigger
             .row.head-about
                 .col-sm-4
-                    h1 I am.
+                    h1 I Am.
             .row.content-body-about
                 .col-sm-4.col-sm-offset-2
                     img(src='images/michael-profile.jpg').profile-pic.img-circle
@@ -60,8 +60,15 @@ html
             .row.head-work
                 .col-sm-4
                     h1 I Build Things.
-                .col-sm-8              
-                
+            .row.portfolio.content-body-work
+                .col-sm-2.col-sm-offset-1
+                    img(src='images/whosays.png').img-circle.port-img
+                    h3 
+                        a(href='http://whosays.herokuapp.com') who says?
+                    p a browser based version of your favorite memory game              
+            .row.content-body-work    
+                .col-sm-9.col-sm-offset-5
+                    h2.text-muted more to come...
                 
     .top-left-mask
     //- .bottom-trigger.work-trigger
@@ -81,7 +88,7 @@ html
                             img(src='/images/li-black.png')
                     .gh-icon 
                         a(href='https://github.com/michael-lechner/whosays')
-                            img(src='images/GitHub-Mark-64px.png')
+                            img(src='images/github-mark-black-64px.png')
 
                 .col-sm-6
                     form(role='form')
@@ -89,7 +96,7 @@ html
                             input(type='email' placeholder='Your email.').form-control
                         .form-group
                             textarea(type='text' placeholder='What can I tell you about?').form-control
-                          button.btn.btn-lg.btn-primary.btn-right.pull-right.submit-contact send.
+                            button.btn.btn-lg.btn-primary.btn-right.pull-right.submit-contact send.
     .top-left-mask
 
 
@@ -100,3 +107,12 @@ html
   script(src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
   script(type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js")
   script(src="javascripts/main.js")
+  script
+      | (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      | (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      | m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      | })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      | ga('create', 'UA-48290489-1', 'bar44.co');
+      | ga('send', 'pageview');
+

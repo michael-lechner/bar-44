@@ -157,14 +157,22 @@ $(document).ready(function(){
 		$(this).attr('src', '/images/li-black.png')
 	});
 
+	$(document).on('mouseover', '.gh-icon img', function(){
+		$(this).attr('src', '/images/github-mark-blue-64px.png')
+	});
+
+	$(document).on('mouseout', '.gh-icon img', function(){
+		$(this).attr('src', '/images/github-mark-black-64px.png')
+	});
+
 
 	/**
 	setup page
 	*/
 	$(window).load(function(){
-		$('html').animate({
-			scrollTop: $('#home').offset().top
-		}, 1000);
+		// $('html').animate({
+		// 	scrollTop: $('#home').offset().top
+		// }, 1000);
 		$('.home').addClass('active');
 		$('#background-img2').fadeOut(0);
 		$('#background-img3').fadeOut(0);
