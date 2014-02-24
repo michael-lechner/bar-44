@@ -1,0 +1,96 @@
+body, html{
+	overflow-x: hidden;
+}
+
+#background-img-container{
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#logo-box{
+	position: fixed;
+	top: 10%;
+	right: 2%;
+	padding: 70px 30px 0px 30px;
+	background-color: rgba(52, 73, 94, 0.3);
+	border: 13px solid rgba(236, 240, 241,1.0);
+}
+
+.logo{
+	display: inline-block;
+	margin-top: -50px;
+	font-size: 200px;
+	color: rgba(236, 240, 241,1.0)
+}
+
+.logo-top{
+	position: relative;
+	border-top: 13px solid rgba(236, 240, 241,1.0)
+}
+
+.bottom-left-mask{
+	position: relative;
+	left: -200px;
+	width: 200%;
+	height: 500px;
+	background-color: #ecf0f1;
+	-ms-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+}
+
+.top-left-mask{
+	position: relative;
+	top: -100px;
+	left: -200px;
+	width: 200%;
+	height: 500px;
+	background-color: #ecf0f1;
+	-ms-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+}
+
+.profile-pic{
+	width: 300px;
+}
+
+.content{
+	height: 100%;
+	position: relative;
+	background-color: #ecf0f1;
+	padding: 100px 0px;
+	z-index: 2;
+}
+
+.spacer{
+	position: relative;
+	background: transparent;
+	height: 500px;
+}
+
+.form-row{
+	margin-top: 100px;
+}
+
+.form-row textarea{
+	height: 300px;
+}
+
+.li-icon img{
+	margin: 50px 30px 70px 0px;
+	width: 50px;
+	float: left;
+}
+
+.gh-icon img{
+	margin: 50px 0px 70px 0px;
+	width: 50px;
+	color: red;
+}
+
