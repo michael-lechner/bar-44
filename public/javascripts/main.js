@@ -1,5 +1,5 @@
-var fadeOutBackgroundSpd = 200;
-var fadeInBackgroundSpd = 0;
+var fadeOutBackgroundSpd = 0;//1000;
+var fadeInBackgroundSpd = 0;//5000;
 
 
 $(document).ready(function(){
@@ -137,9 +137,14 @@ $(document).ready(function(){
 		var str = '#' + $(this).attr('class');
 		str = str.substring(0, str.length - 7)
 
-		$('html').animate({
+		console.log(str);
+		console.log($(str).offset());
+
+		$('body').animate({
 			scrollTop: $(str).offset().top
-		}, 2500);
+		}, 2500, function(){
+			console.log('blah');
+		});
 
 	});
 

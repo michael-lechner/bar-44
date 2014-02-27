@@ -13,12 +13,6 @@ html
         .logo-top
         .logo 44
     #home
-    //- .nav
-    //-     ul.list-inline
-    //-         li.home HOME
-    //-         li.about ME
-    //-         li.work BUILD
-    //-         li.contact HELLO
     nav(role="navigation").navbar.navbar-inverse.navbar-fixed-top.nav
         .navbar-header
             button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
@@ -47,10 +41,8 @@ html
                 .col-sm-4.col-sm-offset-2
                     h1 Michael Lechner
                     h4 web development - boulder, co</h4>
-                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>            
-                    
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.             
     .top-left-mask
-    //- .bottom-trigger.about-trigger
     .spacer
     .bottom-left-mask
     .top-trigger.work-trigger
@@ -68,12 +60,10 @@ html
                     p a browser based version of your favorite memory game              
             .row.content-body-work    
                 .col-sm-9.col-sm-offset-5
-                    h2.text-muted more to come...
-                
+                    h2.text-muted more to come...    
     .top-left-mask
-    //- .bottom-trigger.work-trigger
     .spacer
-    .bottom-left-mask
+    .bottom-left-mask.dark
     .top-trigger.contact-trigger
     #contact.content
         .container
@@ -89,6 +79,7 @@ html
                     .gh-icon 
                         a(href='https://github.com/michael-lechner/whosays')
                             img(src='images/github-mark-black-64px.png')
+                        .glyphicon.glyphicon-envelope
 
                 .col-sm-6
                     form(role='form')
@@ -97,11 +88,7 @@ html
                         .form-group
                             textarea(type='text' placeholder='What can I tell you about?').form-control
                         button.btn.btn-lg.btn-primary.btn-right.pull-right.submit-contact send.
-    .top-left-mask
-
-
-
-
+    .top-left-mask.dark
 
   script(src="http://code.jquery.com/jquery-2.0.3.min.js")
   script(src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
