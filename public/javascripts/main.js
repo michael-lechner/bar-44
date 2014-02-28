@@ -1,5 +1,6 @@
 var fadeOutBackgroundSpd = 0;//1000;
 var fadeInBackgroundSpd = 0;//5000;
+var iconAnim = 500;
 
 
 $(document).ready(function(){
@@ -50,6 +51,7 @@ $(document).ready(function(){
 				$('.head-about').animate({'margin-left': '50px'}, 1200, function(){
 					$('.head-about').animate({'margin-left': '0px'}, 200, function(){
 						$('.content-body-about').fadeIn(1000);
+						$('#about').animate({backgroundColor: 'rgba(236, 240, 241, 0.8)'}, 1000);
 					});				
 				});
 			}				
@@ -58,6 +60,7 @@ $(document).ready(function(){
 				$('.head-work').animate({'margin-left': '50px'}, 1200, function(){
 					$('.head-work').animate({'margin-left': '0px'}, 200, function(){
 						$('.content-body-work').fadeIn(1000);
+						$('#work').animate({backgroundColor: 'rgba(236, 240, 241, 0.8)'}, 1000);
 					});				
 				});
 			}				
@@ -66,6 +69,7 @@ $(document).ready(function(){
 				$('.head-contact').animate({'margin-left': '50px'}, 1200, function(){
 					$('.head-contact').animate({'margin-left': '0px'}, 200, function(){
 						$('.content-body-contact').fadeIn(1000);
+						$('#contact').animate({backgroundColor: 'rgba(52, 73, 94, 0.8)'}, 1000);
 					});				
 				});
 			}
@@ -125,6 +129,7 @@ $(document).ready(function(){
 		if(direction === 'down'){
 
 		}else{
+			fadeAll();
 			fadeSelect($(this), direction);
 			animateContentIn($(this), direction);
 		}
@@ -137,13 +142,9 @@ $(document).ready(function(){
 		var str = '#' + $(this).attr('class');
 		str = str.substring(0, str.length - 7)
 
-		console.log(str);
-		console.log($(str).offset());
-
 		$('body').animate({
 			scrollTop: $(str).offset().top
 		}, 2500, function(){
-			console.log('blah');
 		});
 
 	});
@@ -154,20 +155,33 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	$(document).on('mouseover', '.li-icon img', function(){
-		$(this).attr('src', '/images/li-blue.png')
-	});
+	$('.li-icon img').hover(function(){
+		$(this).animate({opacity: 0.0}, iconAnim);
+	}, function(){
+		$(this).animate({opacity: 1.0}, iconAnim);
+	});	
 
-	$(document).on('mouseout', '.li-icon img', function(){
-		$(this).attr('src', '/images/li-black.png')
-	});
+	$('.gh-icon img').hover(function(){
+		$(this).animate({opacity: 0.0}, iconAnim);
+	}, function(){
+		$(this).animate({opacity: 1.0}, iconAnim);
+	});	
 
-	$(document).on('mouseover', '.gh-icon img', function(){
-		$(this).attr('src', '/images/github-mark-blue-64px.png')
-	});
+	$('.glyphicon-envelope').hover(function(){
+		$(this).animate({color: 'rgba(0, 122, 184, 1.0)'}, iconAnim);
+	}, function(){
+		$(this).animate({color: 'rgba(0, 0, 0, 1.0)'}, iconAnim);;
+	});	
 
-	$(document).on('mouseout', '.gh-icon img', function(){
-		$(this).attr('src', '/images/github-mark-black-64px.png')
+	$(document).on('click', '.submit-contact', function(e){
+		e.preventDefault();
+		// console.log('made it');
+		var address = $(this).closest('.email-form').find('.email-address').val();
+		var message = $(this).closest('.email-form').find('.message').val();
+
+		$.get('/email', {address: address, message: message}, function(data){
+
+		});
 	});
 
 
@@ -178,6 +192,7 @@ $(document).ready(function(){
 		// $('html').animate({
 		// 	scrollTop: $('#home').offset().top
 		// }, 1000);
+		// fadeAll();
 		$('.home').addClass('active');
 		$('#background-img2').fadeOut(0);
 		$('#background-img3').fadeOut(0);

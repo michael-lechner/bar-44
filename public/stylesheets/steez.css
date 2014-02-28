@@ -68,6 +68,10 @@ body, html{
 	z-index: 2;
 }
 
+.content-body-about{
+	margin-top: 50px;
+}
+
 .spacer{
 	position: relative;
 	background: transparent;
@@ -91,7 +95,7 @@ body, html{
 .gh-icon img{
 	margin: 40px 0px 70px 0px;
 	width: 50px;
-	/*float: left;*/
+	float: left;
 }
 
 .content-body-contact .glyphicon-envelope{
@@ -103,11 +107,11 @@ body, html{
 }
 
 .content-body-contact .glyphicon-envelope:hover{
-	color: #007ab8;
+	text-decoration: none;
 }
 
 .portfolio{
-	margin: 100px 0px 0px 0px;
+	margin: 70px 0px 0px 0px;
 }
 
 .port-img{
@@ -116,8 +120,16 @@ body, html{
 	padding: 10px;
 }
 
+.top-img{
+	position: absolute;
+}
+
+.em-icon{
+	display: inline;
+}
+
 #contact.content{
-	background-color: rgba(52, 73, 94, 0.8);
+	background-color: rgba(52, 73, 94, 1.0);
 	color: #fff;
 }
 

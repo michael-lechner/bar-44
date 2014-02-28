@@ -8,7 +8,7 @@ html
     #background-img-container
         img(src='images/mountain-snow.jpg' id='background-img1')
         img(src='images/zr-structure-1.jpg' id='background-img2')
-        img(src='images/zr-structure-2.jpg' id='background-img3')
+        img(src='images/zr-structure-3.jpg' id='background-img3')
     #logo-box
         .logo-top
         .logo 44
@@ -35,13 +35,17 @@ html
                 .col-sm-4
                     h1 I Am.
             .row.content-body-about
-                .col-sm-4.col-sm-offset-2
+                .col-sm-2.col-sm-offset-1
                     img(src='images/michael-profile.jpg').profile-pic.img-circle
-            .row.content-body-about
-                .col-sm-4.col-sm-offset-2
+                .col-sm-7.col-sm-offset-2
                     h1 Michael Lechner
                     h4 web development - boulder, co</h4>
                     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.             
+            .row.content-body-about
+                //- .col-sm-4.col-sm-offset-2
+                //-     h1 Michael Lechner
+                //-     h4 web development - boulder, co</h4>
+                //-     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.             
     .top-left-mask
     .spacer
     .bottom-left-mask
@@ -75,22 +79,26 @@ html
                     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
                     .li-icon
                         a(href='http://www.linkedin.com/pub/michael-lechner/17/3b7/7b4/')
-                            img(src='/images/li-black.png')
+                            img(src='/images/li-black.png').top-img
+                            img(src='/images/li-blue.png')
                     .gh-icon 
                         a(href='https://github.com/michael-lechner/whosays')
-                            img(src='images/github-mark-black-64px.png')
-                        .glyphicon.glyphicon-envelope
+                            img(src='images/git-black.png').top-img
+                            img(src='images/git-blue.png')
+                    .em-icon    
+                        a(href='mailto:mlechner2@gmail.com?Subject=bar44?').glyphicon.glyphicon-envelope
 
                 .col-sm-6
-                    form(role='form')
+                    form(role='form').email-form
                         .form-group
-                            input(type='email' placeholder='Your email.').form-control
+                            input(type='email' placeholder='Your email.').form-control.email-address
                         .form-group
-                            textarea(type='text' placeholder='What can I tell you about?').form-control
-                        button.btn.btn-lg.btn-primary.btn-right.pull-right.submit-contact send.
+                            textarea(type='text' placeholder='Tell me something.').form-control.message
+                        button.btn.btn-lg.btn-default.btn-right.pull-right.submit-contact send
     .top-left-mask.dark
 
   script(src="http://code.jquery.com/jquery-2.0.3.min.js")
+  script(src='javascripts/jquery-ui-1.10.4.custom.min.js')
   script(src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
   script(type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js")
   script(src="javascripts/main.js")
