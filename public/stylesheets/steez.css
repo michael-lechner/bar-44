@@ -136,3 +136,7 @@ body, html{
 .dark{
 	background-color: rgba(52, 73, 94, 1.0);
 }
+
+a:hover{
+	text-decoration: none;
+}

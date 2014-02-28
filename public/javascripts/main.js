@@ -175,12 +175,24 @@ $(document).ready(function(){
 
 	$(document).on('click', '.submit-contact', function(e){
 		e.preventDefault();
-		// console.log('made it');
-		var address = $(this).closest('.email-form').find('.email-address').val();
-		var message = $(this).closest('.email-form').find('.message').val();
+
+		var form = $(this).closest('.email-form')
+
+		var address = form.find('.email-address').val();
+		var message = form.find('.message').val();
+
+		if(message === ''){
+			form.find('.message-group').addClass('has-error');
+			form.find('.message').val('');
+			form.find('.message').attr('placeholder', 'please include a message')			
+		}
 
 		$.get('/email', {address: address, message: message}, function(data){
-
+			if(data.email === 'fail'){
+				form.find('.email-group').addClass('has-error');
+				form.find('.email-address').val('');
+				form.find('.email-address').attr('placeholder', 'invalid email')
+			}
 		});
 	});
 
@@ -189,10 +201,6 @@ $(document).ready(function(){
 	setup page
 	*/
 	$(window).load(function(){
-		// $('html').animate({
-		// 	scrollTop: $('#home').offset().top
-		// }, 1000);
-		// fadeAll();
 		$('.home').addClass('active');
 		$('#background-img2').fadeOut(0);
 		$('#background-img3').fadeOut(0);
