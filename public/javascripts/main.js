@@ -77,11 +77,11 @@ $(document).ready(function(){
 	};
 
 	var animateContentOut = function(){
-		$('.head-about').animate({'margin-left': '-500px'}, 500);
+		$('.head-about').animate({'margin-left': '-750px'}, 500);
 		$('.content-body-about').fadeOut(200);
-		$('.head-work').animate({'margin-left': '-500px'}, 500);
+		$('.head-work').animate({'margin-left': '-750px'}, 500);
 		$('.content-body-work').fadeOut(200);
-		$('.head-contact').animate({'margin-left': '-500px'}, 500);
+		$('.head-contact').animate({'margin-left': '-750px'}, 500);
 		$('.content-body-contact').fadeOut(200);
 
 	};
