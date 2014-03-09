@@ -173,6 +173,20 @@ $(document).ready(function(){
 		$(this).animate({color: 'rgba(0, 0, 0, 1.0)'}, iconAnim);;
 	});	
 
+	$('.port-item a').hover(function(){
+		$(this).animate({color: 'rgba(256, 256, 256, 1.0)'}, iconAnim);
+	}, function(){
+		$(this).animate({color: 'rgba(52, 73, 94, 1.0)'}, iconAnim);;
+	});	
+
+	/* only necessary for unlinked items */
+	$('.port-item h3').hover(function(){
+		$(this).animate({color: 'rgba(256, 256, 256, 1.0)'}, iconAnim);
+	}, function(){
+		$(this).animate({color: 'rgba(52, 73, 94, 1.0)'}, iconAnim);;
+	});	
+
+
 	$(document).on('click', '.submit-contact', function(e){
 		e.preventDefault();
 

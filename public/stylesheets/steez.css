@@ -114,9 +114,26 @@ body, html{
 	margin: 70px 0px 0px 0px;
 }
 
+.port-item{
+	margin-right: 50px;
+	color: rgba(52, 73, 94, 1.0);
+}
+
+.port-item a{
+	color: rgba(52, 73, 94, 1.0);
+}
+
+.port-item h3{
+	text-align: center;
+}
+
+/*.port-item a:hover{
+	color: rgba(256, 256, 256, 1.0);
+}*/
+
 .port-img{
 	width: 150px;
-	border: 5px solid #000;
+	border: 5px solid rgba(52, 73, 94, 0.5);
 	padding: 10px;
 }
 
