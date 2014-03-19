@@ -1,5 +1,5 @@
-var fadeOutBackgroundSpd = 0;//1000;
-var fadeInBackgroundSpd = 0;//5000;
+var fadeOutBackgroundSpd = 0;
+var fadeInBackgroundSpd = 0;
 var iconAnim = 500;
 
 
@@ -136,24 +136,9 @@ $(document).ready(function(){
 
 	});
 
-	/** Handles smooth scrolling
-	*/
 	$(document).on('click', '.list-inline li', function(){
-		var str = '#' + $(this).attr('class');
-		str = str.substring(0, str.length - 7)
-
-		$('body').animate({
-			scrollTop: $(str).offset().top
-		}, 2500, function(){
-		});
-
+		$('.head-about').smoothScroll();
 	});
-
-	/** Handles form submission
-	*/
-	// $(document).on('click', '.submit-contact', function(e){
-	// 	e.preventDefault();
-	// });
 
 	$('.li-icon img').hover(function(){
 		$(this).animate({opacity: 0.0}, iconAnim);
@@ -225,5 +210,8 @@ $(document).ready(function(){
 	});
 
 	setDivOffset();
+
+	/* smooth scrolling */
+	smoothScroll.init({speed: 2000});
 
 });
