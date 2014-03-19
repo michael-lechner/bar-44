@@ -136,10 +136,6 @@ $(document).ready(function(){
 
 	});
 
-	$(document).on('click', '.list-inline li', function(){
-		$('.head-about').smoothScroll();
-	});
-
 	$('.li-icon img').hover(function(){
 		$(this).animate({opacity: 0.0}, iconAnim);
 	}, function(){
@@ -212,6 +208,6 @@ $(document).ready(function(){
 	setDivOffset();
 
 	/* smooth scrolling */
-	smoothScroll.init({speed: 2000});
+	smoothScroll.init({speed: 1000});
 
 });
