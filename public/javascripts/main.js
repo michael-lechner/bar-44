@@ -151,9 +151,9 @@ $(document).ready(function(){
 
 	/** Handles form submission
 	*/
-	$(document).on('click', '.submit-contact', function(e){
-		e.preventDefault();
-	});
+	// $(document).on('click', '.submit-contact', function(e){
+	// 	e.preventDefault();
+	// });
 
 	$('.li-icon img').hover(function(){
 		$(this).animate({opacity: 0.0}, iconAnim);
@@ -194,6 +194,9 @@ $(document).ready(function(){
 
 		var address = form.find('.email-address').val();
 		var message = form.find('.message').val();
+
+		form.find('.email-address').val('');
+		form.find('.message').val('Email Sent!')
 
 		if(message === ''){
 			form.find('.message-group').addClass('has-error');
