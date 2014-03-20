@@ -228,6 +228,7 @@ $(document).ready(function(){
 		$('.tech-imgs img').css('margin-right', '15px');
 		$('.tech-imgs img').css('margin-top', '15px');
 		$('.port-item').css('margin-right', '0px');
+		$('.port-item').css('width', '100px');
 
 		$('.bottom-trigger').waypoint(function(direction){
 			$('#logo-box').fadeOut(300);
