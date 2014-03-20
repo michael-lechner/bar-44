@@ -40,10 +40,29 @@ html
             .row.content-body-about
                 .col-sm-2.col-sm-offset-1
                     img(src='images/michael-profile.jpg').profile-pic.img-circle
-                .col-sm-7.col-sm-offset-2
-                    h1 Michael Lechner
-                    h4 web development - boulder, co</h4>
-                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.             
+                .col-sm-6.col-sm-offset-2
+                    .row
+                        h1 Michael Lechner
+                        h4.text-muted.sub-title web developer
+                        p 
+                            | Born in Durango, graduated from Michigan State, 
+                            | played in Yosemite and landed in Boulder, CO.
+                        p    
+                            | Away from the keyboard,
+                            | I love the adventure of the mountains and the 
+                            | American West.
+                            | Although I come from a lineage of cattle ranchers, I am
+                            | much more comfortable wrangling curly braces than
+                            | steers. And when people ask what I do, I tell them I 
+                            | write cowboy code. 
+                        p
+                            | Refactoring the old and embracing 
+                            | the new, I have a thing for technology and have 
+                            | spent time working on all levels of the web stack.
+                    .row.tech-imgs
+                        img(src='images/html5-256.png').html5-img
+                        img(src='images/js-240.png').js-img
+                        img(src='images/nodejs-light.png').node-img
             .row.content-body-about
     .top-left-mask
     .spacer
@@ -84,7 +103,17 @@ html
                     h1 Say Hello.
             .row.form-row.content-body-contact
                 .col-sm-6
-                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
+                    p 
+                        | Thanks for taking the time and having a look around! Unfortunately, this is a website
+                        | and I can't shake your hand, but if I could I would. 
+                    p
+                        | If you have an idea and you think I could help or you just like a friendly chat,
+                        | please feel free to drop me a line and let me know a little bit more about
+                        | what's on your mind.
+
+                        //- | Want to talk about code,
+                        //- | have an idea you want to work on, just want to chat? Drop me
+                        //- | a line and let me know how I can help.
                     .li-icon
                         a(href='http://www.linkedin.com/pub/michael-lechner/17/3b7/7b4/')
                             img(src='/images/li-blue.png')
@@ -99,9 +128,9 @@ html
                 .col-sm-6
                     form(role='form').email-form
                         .form-group.email-group
-                            input(type='email' placeholder='Your email.').form-control.email-address
+                            input(type='email' placeholder='Your Email Here.').form-control.email-address
                         .form-group.message-group
-                            textarea(type='text' placeholder='Tell me something.').form-control.message
+                            textarea(type='text' placeholder='Your Message Here.').form-control.message
                         button.btn.btn-lg.btn-default.btn-right.pull-right.submit-contact send
     .top-left-mask.dark
 
