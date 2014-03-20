@@ -217,13 +217,16 @@ $(document).ready(function(){
 	if(w < 321){
 		$('#background-img-container').css('display', 'none');
 		$('.bottom-left-mask').css('display', 'none');
-		// $('body').css('background-color', '#ecf0f1;');
-		// $('.content').css('margin-top', '120px');
 		$('.spacer').css('display', 'none');
-		// $('#about').css('background-color', 'rgba(236, 240, 241, 1.0)')
-		// $('#work').css('background-color', 'rgba(236, 240, 241, 1.0)')
-		// $('#contact').css('background-color', 'rgba(52, 73, 94, 1.0)')
-		// $('.tech-imgs img').css('margin-right', '10px');
+		$('#work').css('display', 'none');
+
+		$('body').css('background-color', '#ecf0f1;');
+		$('.content').css('margin-top', '120px');
+		$('#about').css('background-color', 'rgba(236, 240, 241, 1.0)')
+		$('#work').css('background-color', 'rgba(236, 240, 241, 1.0)')
+		$('#contact').css('background-color', 'rgba(52, 73, 94, 1.0)')
+		$('.tech-imgs img').css('margin-right', '10px');
+
 		$('.bottom-trigger').waypoint(function(direction){
 			$('#logo-box').fadeOut(300);
 		});
