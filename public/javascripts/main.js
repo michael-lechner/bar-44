@@ -221,6 +221,7 @@ $(document).ready(function(){
 		$('.li-icon').css('display', 'none');
 		$('.gh-icon').css('display', 'none');
 		$('.em-icon').css('display', 'none');
+		$('.navbar').css('display', 'none');
 
 		$('body').css('background-color', '#ecf0f1;');
 		$('.content').css('margin-top', '120px');
