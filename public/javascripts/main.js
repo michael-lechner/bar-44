@@ -5,6 +5,7 @@ var iconAnim = 500;
 
 $(document).ready(function(){
 	var h = window.innerHeight;
+	var w = $(window).width();
 
 	var setDivOffset = function(){
 		$('.bottom-left-mask').css('top', (0.9*h));
@@ -209,5 +210,20 @@ $(document).ready(function(){
 
 	/* smooth scrolling */
 	smoothScroll.init({speed: 1000});
+
+	/* mobile disabled */
+	if(w < 320){
+		$('#background-img-container').css('display', 'none');
+		$('.bottom-left-mask').css('display', 'none');
+		$('body').css('background-color', '#ecf0f1;');
+		$('.content').css('margin-top', '120px');
+		$('.spacer').css('display', 'none');
+		$('#about').css('background-color', 'rgba(236, 240, 241, 1.0)')
+		$('#work').css('background-color', 'rgba(236, 240, 241, 1.0)')
+		$('#contact').css('background-color', 'rgba(52, 73, 94, 1.0)')
+		$('.bottom-trigger').waypoint(function(direction){
+			$('#logo-box').fadeOut(300);
+		});		
+	} 
 
 });
