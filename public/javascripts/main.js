@@ -225,7 +225,9 @@ $(document).ready(function(){
 		$('#about').css('background-color', 'rgba(236, 240, 241, 1.0)')
 		$('#work').css('background-color', 'rgba(236, 240, 241, 1.0)')
 		$('#contact').css('background-color', 'rgba(52, 73, 94, 1.0)')
-		$('.tech-imgs img').css('margin-right', '10px');
+		$('.tech-imgs img').css('margin-right', '15px');
+		$('.tech-imgs img').css('margin-top', '15px');
+		$('.port-item').css('margin-right', '0px');
 
 		$('.bottom-trigger').waypoint(function(direction){
 			$('#logo-box').fadeOut(300);
