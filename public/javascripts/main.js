@@ -218,7 +218,7 @@ $(document).ready(function(){
 		$('#background-img-container').css('display', 'none');
 		$('.bottom-left-mask').css('display', 'none');
 		$('.spacer').css('display', 'none');
-		$('#work').css('display', 'none');
+		// $('#work').css('display', 'none');
 
 		$('body').css('background-color', '#ecf0f1;');
 		$('.content').css('margin-top', '120px');
