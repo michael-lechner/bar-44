@@ -218,7 +218,9 @@ $(document).ready(function(){
 		$('#background-img-container').css('display', 'none');
 		$('.bottom-left-mask').css('display', 'none');
 		$('.spacer').css('display', 'none');
-		// $('#work').css('display', 'none');
+		$('.li-icon').css('display', 'none');
+		$('.gh-icon').css('display', 'none');
+		$('.em-icon').css('display', 'none');
 
 		$('body').css('background-color', '#ecf0f1;');
 		$('.content').css('margin-top', '120px');
@@ -228,8 +230,8 @@ $(document).ready(function(){
 		$('.tech-imgs img').css('margin-right', '15px');
 		$('.tech-imgs img').css('margin-top', '15px');
 		$('.port-item').css('margin-right', '0px');
-		$('.port-item').css('width', '100px');
-		$('.port-img').css('width', '100px');
+		$('.port-item').css('width', '100%');
+		// $('.port-img').css('width', '20px');
 
 		$('.bottom-trigger').waypoint(function(direction){
 			$('#logo-box').fadeOut(300);
