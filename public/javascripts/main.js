@@ -212,7 +212,7 @@ $(document).ready(function(){
 	smoothScroll.init({speed: 1000});
 
 	/* mobile disabled */
-	if(w < 320){
+	if(w < 641){
 		$('#background-img-container').css('display', 'none');
 		$('.bottom-left-mask').css('display', 'none');
 		$('body').css('background-color', '#ecf0f1;');
