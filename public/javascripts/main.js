@@ -234,7 +234,7 @@ $(document).ready(function(){
 		// $('.port-img').css('width', '20px');
 
 		$('.bottom-trigger').waypoint(function(direction){
-			$('#logo-box').fadeOut(300);
+			$('#logo-box').fadeOut(100);
 		});
 
 	} 
